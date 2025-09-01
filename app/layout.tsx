@@ -8,7 +8,10 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko">
-      <body>{children}</body>
+      {/* ✅ 여기서 바로 배경색 적용 */}
+      <body className="bg-gradient-to-b from-blue-700 to-blue-500 text-white">
+        {children}
+      </body>
     </html>
   );
 }
